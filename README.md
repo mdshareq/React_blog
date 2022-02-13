@@ -1,6 +1,11 @@
 #Home Page
 ![Home-Page](https://user-images.githubusercontent.com/99613527/153770815-4b636e7d-f261-4cc8-8380-1ad65a4342ac.PNG)
 
+#Create New Page
+![Create-New-Blog-Page](https://user-images.githubusercontent.com/99613527/153770889-c0c188e0-e813-4108-a241-c969796a46ab.PNG)
+
+#Blog View Page
+![Blog-view](https://user-images.githubusercontent.com/99613527/153770898-7a7fdc4e-b0b5-4e52-868c-a8960dd0d74d.PNG)
 
 
 # Getting Started with Create React App
