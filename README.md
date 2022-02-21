@@ -26,3 +26,5 @@ CREATE PAGE
 VIEW PAGE
 
 ![Blog-view](https://user-images.githubusercontent.com/99613527/153770898-7a7fdc4e-b0b5-4e52-868c-a8960dd0d74d.PNG)
+
+![TheBlog](https://user-images.githubusercontent.com/99613527/154932417-0ea03248-6495-419a-b2f8-a9106a9c4fe2.png)
