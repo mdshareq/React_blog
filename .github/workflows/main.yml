@@ -2,15 +2,23 @@ name: New Issue
 
 on:
   issues:
-   types: [opened]
+    types: [opened]
   workflow_dispatch:
 
 jobs:
   newupdate:
     runs-on: ubuntu-latest
     steps:
-      - name: "running"
-        run: echo '${{ toJSON(github.event) }}' | jq
+      - name: Run command and print GitHub event
+        run: |
+          echo "This is a multi-line test comment"
+          echo "- With GitHub **Markdown** :sparkles:"
+          echo "- Created by [create-or-update-comment][1]"
+          echo ""
+          echo "[1]: https://github.com/peter-evans/create-or-update-comment"
+          echo '${{ toJSON(github.event) }}' | jq
+
+      - name: Create or update comment
         uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
@@ -21,4 +29,3 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-or-update-comment
           reactions: '+1'
-      
