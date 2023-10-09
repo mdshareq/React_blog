@@ -1,12 +1,8 @@
-name: New update
+name: New Issue
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  issues:
+   types: [opened]
   workflow_dispatch:
 
 jobs:
@@ -14,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "running"
+        run: echo '${{ toJSON(github.event) }}' | jq
         uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
